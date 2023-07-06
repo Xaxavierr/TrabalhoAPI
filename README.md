@@ -1,6 +1,17 @@
 ## Trabalho 
 Meu nome é Murilo Xavier e este é meu trabalho API do professor João Vitor,e este link-https://youtu.be/khoi3__e3CM é minha documentação de como usar a minha API e quais são suas funções de acordo com a proposta do trabalho.
 
+Rotas e o que esperam:
+Route::get('/tasks', [TaskController::class, 'index']); --> pegar/puxar todas tarefas
+
+Route::post('/tasks', [TaskController::class, 'store']); --> colocar Tarefas novas
+
+Route::get('/tasks/{task}', [TaskController::class, 'show']); --> Puxar tarefas expecíficas (filtro)
+
+Route::put('/tasks/{task}', [TaskController::class, 'update']); --> Atualiza tarefas
+
+Route::delete('/tasks/{task}', [TaskController::class, 'destroy']); --> Exclui tarefas
+
 Obrigado, Murilo.
 
 
